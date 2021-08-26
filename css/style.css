@@ -1,0 +1,118 @@
+*{ /*conocido como el selector universal para toda la página*/
+	box-sizing: :border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+.titulo{
+	width:100%;
+	font-size: 30px;
+	font-family: impact;
+	font-weight: 700;
+	height: 100px;
+	text-align: center;
+	background:linear-gradient(-225deg, yellow, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+   
+
+
+	/*codigo para centrar cajas*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.padre{width: 90%; /*tamaño del 90% del ancho de la pag*/
+	margin: auto;/*margin igual en todos los lados*/
+	display: flex; /*se van a alinear uno al lado de otro*/
+	flex-wrap: wrap; /*permite que sean elementos flexibles*/
+	justify-content: center;/*contenedor centrado*/
+	}
+
+.hijo{
+	width: 400px;
+	margin: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+.description{
+	display: block;
+	background-color: yellow;
+}
+
+.boton{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.boton>a{
+	display: block;
+	background-color: purple;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	border-radius: 30px;
+}
+
+.boton>a:hover{
+	background-color: #DF5713;
+	transition: all 1s;
+	color: blue;
+}
+
+.titulo-cuadro{
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+	color: red;
+	font-family:  'Leckerli One', cursiva;
+
+
+}
+
+.description{
+	padding: 10px ;
+	font-family:  'Zilla Slab', serif;
+	text-align: justify-all;
+	color: darkblue;
+}
+
+.parra{
+	padding-bottom:16px;
+}
+
+.imagen-index:hover{
+	transform: scale(1.5);
+	transition: all 2s;
+}
+
+
+
+.cuadro-foto{
+	overflow: hidden; /*que se oculte al sobrebordar*/ 
+}
+
+
+.pie{
+	width: 100%;
+	background-color: gray;
+	font-size: 24px;
+	font-family: impact;
+	font-weight: 700;
+	
+	display: flex;
+	justify-content: space-around;
+
+}
